@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.container {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.shapes {
+    width: 50px;
+    height: 150px;
+    background-color: #000;
+    transform: rotate(329deg);
+}
+.shapes:first-of-type {
+    position: relative;
+    top: 80%;
+    left: 2px;
+}
+.shapes:nth-of-type(2) {
+    position: relative;
+    top: 55%;
+}
+.shapes:nth-of-type(3) {
+    position: relative;
+    top: 30%;
+}
+.text {
+    font-family: sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    position: absolute;
+    top: 61%;
+}

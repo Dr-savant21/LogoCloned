@@ -1,0 +1,40 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 200px;
+    height:170px;
+    /* border: 1px solid red; */
+    display: flex;
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    overflow: hidden;
+}
+.netflix {
+    width: 30px;
+    height: 180px;
+    background-color: red;
+}
+.netflix:nth-of-type(2) {
+    transform: rotate(340deg);
+    position: relative;
+    z-index: 2;
+    background-color: pink;
+    height: 200px;
+}
+.netflix:nth-of-type(1) {
+    position: relative;
+    right: 2px;
+}
+.netflix:nth-of-type(3) {
+    position: relative;
+    left: 2px;
+}
